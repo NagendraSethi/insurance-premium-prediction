@@ -1,0 +1,4 @@
+pandas
+numpy
+pymongo
+-e . #e->editable mode , dot -> current directory (it is used to install setup.py file)
