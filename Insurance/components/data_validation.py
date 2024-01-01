@@ -136,7 +136,7 @@ class DataValidation:
             logging.info("Write reprt in yaml file")
             utils.write_yaml_file(file_path=self.data_validation_config.report_file_path,
             data=self.validation_error)
-
+ 
             data_validation_artifact = artifact_entity.DataValidationArtifact(report_file_path=self.data_validation_config.report_file_path,)
             logging.info(f"Data validation artifact: {data_validation_artifact}")
             return data_validation_artifact
