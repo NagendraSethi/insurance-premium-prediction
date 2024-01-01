@@ -5,7 +5,7 @@ import sys, os
 from Insurance.entity.config_entity import DataIngestionConfig
 from Insurance.entity import config_entity
 from Insurance.components.data_ingestion import DataIngestion
-# from Insurance.components.data_validation import DataValidation
+from Insurance.components.data_validation import DataValidation
 
 # from Insurance.components.data_transformation import DataTransformation
 
@@ -34,10 +34,10 @@ if __name__=="__main__":
        
        # Data Validation
        data_validation_config = config_entity.DataValidationConfig(training_pipeline_config=training_pipeline_config)
-      #  data_validation = DataValidation(data_validation_config=data_validation_config,
-                        #  data_ingestion_artifact=data_ingestion_artifact)
+       data_validation = DataValidation(data_validation_config=data_validation_config,
+                         data_ingestion_artifact=data_ingestion_artifact)
         
-      #  data_validation_artifact = data_validation.initiate_data_validation()
+       data_validation_artifact = data_validation.initiate_data_validation()
 
       #Data Transformation
 
